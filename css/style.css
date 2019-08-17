@@ -88,6 +88,11 @@ img {
   width: 100%;
 }
 
+.list > li {
+  padding: 0.5rem;
+  border-bottom: 1px dotted #bbb;
+}
+
 h1,
 h2,
 h3,
@@ -109,6 +114,10 @@ h6 {
 .card {
   background: #fff;
   padding: 1rem;
+}
+
+.l-heading {
+  font-size: 3rem;
 }
 
 .py-1 {
@@ -141,6 +150,13 @@ h6 {
 .bg-secondary {
   background: var(--secondary-color);
   color: #fff;
+}
+
+.page-container {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-gap: 1.5rem;
 }
 
 #main-nav {
@@ -287,8 +303,29 @@ h6 {
 #main-footer .footer-container a {
   color: #fff;
 }
+#main-footer .footer-container a:hover {
+  color: var(--primary-color);
+}
 
 #main-footer .footer-container li {
   padding: 0.5rem 0;
   border-bottom: 1px solid #555;
+}
+
+/* About */
+.page-container > *:first-child {
+  grid-row: 1 / span 3;
+}
+
+/* Article */
+.meta {
+  background: var(--light-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+#article ul li a:hover {
+  color: var(--primary-color);
 }
